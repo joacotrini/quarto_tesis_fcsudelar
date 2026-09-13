@@ -1,0 +1,9 @@
+# Anexo 1: Pauta de entrevista {.unnumbered}
+
+```{=typst}
+// El espacio simple ya viene heredado desde el final de 06-referencias.qmd.
+```
+
+1. ¿Podría describir su trayectoria en relación con el tema abordado?
+2. ¿Cómo caracterizaría el problema desde su experiencia?
+3. ¿Qué cambios identifica a lo largo del período analizado?

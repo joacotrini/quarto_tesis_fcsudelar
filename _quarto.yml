@@ -1,0 +1,30 @@
+project:
+  type: book
+
+book:
+  title: "Título del trabajo"
+  chapters:
+    - index.qmd
+    - 01-introduccion.qmd
+    - 02-marco-teorico.qmd
+    - 03-metodologia.qmd
+    - 04-resultados-discusion.qmd
+    - 05-conclusiones.qmd
+    - 06-referencias.qmd
+    - 07-anexos.qmd
+
+lang: es
+
+autor: "Nombre y Apellido"
+tutor: "Nombre y Apellido, título profesional"
+departamento: "xxx"
+licenciatura: "xxx"
+lugar: "Montevideo"
+anio: "2026"
+# referente-taller2: "Nombre y Apellido"   # descomentar solo para Licenciatura en Desarrollo
+
+bibliography: references.bib
+number-sections: false
+
+format:
+  fcs-udelar-typst: default

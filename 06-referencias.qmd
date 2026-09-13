@@ -1,0 +1,13 @@
+# Referencias bibliográficas
+
+```{=typst}
+// Espacio simple para la bibliografía (excepción explícita del instructivo).
+#set par(justify: true, leading: 0.65em, spacing: 0.65em)
+#bibliography("references.bib", style: "_extensions/fcs-udelar/apa.csl", title: none)
+
+// A partir de acá (Anexos) se apaga la numeración de página: el toggle debe
+// quedar en la página anterior a los Anexos, porque Quarto adelanta el
+// heading de nivel 1 del capítulo siguiente al comienzo de su propia página,
+// antes que cualquier contenido que se escriba al inicio de ese .qmd.
+#fcs-numerar-paginas.update(false)
+```

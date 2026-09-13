@@ -1,0 +1,36 @@
+# Metodología
+
+## Diseño de la investigación
+
+Se adopta un diseño de tipo observacional, en tanto se busca describir e interpretar el
+fenómeno tal como se presenta, sin intervención sobre las condiciones de su ocurrencia. Esta
+elección se fundamenta en la naturaleza del problema planteado, que requiere un abordaje
+comprensivo antes que explicativo-causal.
+
+## Definición de las dimensiones de análisis
+
+A partir del marco teórico se definen tres dimensiones de análisis: (a) dimensión histórica,
+(b) dimensión institucional y (c) dimensión subjetiva. Cada una se vincula con categorías
+teóricas específicas desarrolladas en el capítulo anterior.
+
+## Estrategia de investigación
+
+Se utiliza una estrategia cualitativa, basada en el análisis documental de fuentes primarias
+y secundarias, atendiendo a las consideraciones éticas correspondientes al manejo de la
+información.
+
+## Fuentes de datos
+
+Las fuentes de datos utilizadas corresponden a documentos institucionales y bibliografía
+académica especializada, seleccionados según su pertinencia para el problema de
+investigación.
+
+La @tbl-fuentes resume las fuentes documentales consultadas.
+
+| Tipo de fuente              | Cantidad |
+|------------------------------|---------:|
+| Documentos institucionales   | 8        |
+| Artículos académicos         | 15       |
+| Libros                       | 6        |
+
+: Fuentes documentales consultadas {#tbl-fuentes}

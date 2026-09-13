@@ -1,1 +1,4 @@
 devdocs/
+
+/.quarto/
+**/*.quarto_ipynb

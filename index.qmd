@@ -1,0 +1,34 @@
+# Dedicatoria {.unnumbered}
+
+A quienes me acompañaron en este proceso.
+
+# Agradecimientos {.unnumbered}
+
+Agradezco a mi tutor/a por la orientación brindada a lo largo de este trabajo, a mi familia
+por el apoyo constante, y a la Facultad de Ciencias Sociales por la formación recibida.
+
+# Resumen {.unnumbered}
+
+Este trabajo aborda un problema sociológico específico a partir de una revisión bibliográfica
+y la aplicación de conocimientos teóricos y metodológicos adquiridos a lo largo de la carrera.
+El objetivo general consiste en analizar las dimensiones centrales del problema planteado,
+identificando sus antecedentes, su relevancia y las condiciones en que se manifiesta.
+
+El abordaje utilizado combina una estrategia cualitativa con el análisis documental de fuentes
+primarias y secundarias, atendiendo a las consideraciones éticas correspondientes. Las
+principales conclusiones muestran que el fenómeno estudiado presenta múltiples dimensiones
+que requieren un abordaje integral, y se proponen líneas de indagación para futuras
+investigaciones.
+
+# Tabla de contenido {.unnumbered}
+
+```{=typst}
+#outline(title: none, depth: 3)
+```
+
+# Índice de figuras y tablas {.unnumbered}
+
+```{=typst}
+#outline(title: [Índice de figuras], target: figure.where(kind: "quarto-float-fig"))
+#outline(title: [Índice de tablas], target: figure.where(kind: "quarto-float-tbl"))
+```

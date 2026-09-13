@@ -1,0 +1,23 @@
+# Marco teórico
+
+## Fundamentos conceptuales
+
+Siguiendo a Berger y Luckmann (1968, p. 36), "la vida cotidiana se presenta como una
+realidad interpretada por los hombres y que para ellos tiene el significado subjetivo de un
+mundo coherente" [@bergerluckmann1968]. Este planteo constituye un punto de partida para
+comprender cómo los sujetos construyen y sostienen su experiencia social.
+
+A su vez, Bourdieu [-@bourdieu1990] aporta herramientas conceptuales para analizar las
+condiciones estructurales que enmarcan dicha experiencia, particularmente en lo referido a
+las disposiciones incorporadas por los agentes sociales.
+
+## Relación con el tema específico de la monografía
+
+Los conceptos revisados permiten construir un marco de interpretación para el problema
+específico abordado en este trabajo, estableciendo puentes entre la teoría general y el caso
+de estudio.
+
+## Contexto
+
+El problema se analiza en el contexto uruguayo contemporáneo, atendiendo a las
+particularidades del período considerado.

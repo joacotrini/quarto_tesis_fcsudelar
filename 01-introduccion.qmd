@@ -1,0 +1,25 @@
+# Introducción
+
+El presente trabajo se propone abordar un problema de relevancia sociológica cuya
+comprensión resulta central para el campo disciplinar. A continuación se presentan los
+antecedentes del problema, su justificación, los objetivos que guían la investigación y una
+breve descripción de la metodología empleada.
+
+## Antecedentes y relevancia del tema
+
+Diversos estudios previos han abordado dimensiones parciales de este problema
+[@bergerluckmann1968; @castel1997], sin embargo persisten vacíos en la comprensión de sus
+condiciones de producción y reproducción a lo largo del tiempo.
+
+## Objetivos
+
+El objetivo general de este trabajo es analizar las principales dimensiones del problema
+planteado. Como objetivos específicos se propone: (a) caracterizar los antecedentes del
+fenómeno, (b) identificar los factores asociados a su persistencia, y (c) discutir sus
+implicancias teóricas y prácticas.
+
+## Metodología
+
+Para el logro de los objetivos propuestos se adopta un abordaje cualitativo, basado en el
+análisis documental de fuentes primarias y secundarias, tal como se detalla en el capítulo de
+Metodología.
