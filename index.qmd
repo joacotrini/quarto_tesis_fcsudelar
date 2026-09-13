@@ -29,6 +29,11 @@ investigaciones.
 # Índice de figuras y tablas {.unnumbered}
 
 ```{=typst}
-#outline(title: [Índice de figuras], target: figure.where(kind: "quarto-float-fig"))
-#outline(title: [Índice de tablas], target: figure.where(kind: "quarto-float-tbl"))
+#text(weight: "bold", size: 13pt)[Índice de figuras]
+#v(0.5em)
+#outline(title: none, target: figure.where(kind: "quarto-float-fig"))
+#v(1.5em)
+#text(weight: "bold", size: 13pt)[Índice de tablas]
+#v(0.5em)
+#outline(title: none, target: figure.where(kind: "quarto-float-tbl"))
 ```

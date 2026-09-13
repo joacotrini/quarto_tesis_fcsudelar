@@ -1,4 +1,6 @@
-devdocs/
+/_book/
+*.typ
+.quarto/
 
 /.quarto/
 **/*.quarto_ipynb
