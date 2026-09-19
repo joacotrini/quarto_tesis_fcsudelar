@@ -1,6 +1,4 @@
 /_book/
-*.typ
-.quarto/
-
 /.quarto/
+/*.typ
 **/*.quarto_ipynb
