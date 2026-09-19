@@ -29,11 +29,16 @@ investigaciones.
 # Índice de figuras y tablas {.unnumbered}
 
 ```{=typst}
-#text(weight: "bold", size: 13pt)[Índice de figuras]
-#v(0.5em)
-#outline(title: none, target: figure.where(kind: "quarto-float-fig"))
-#v(1.5em)
-#text(weight: "bold", size: 13pt)[Índice de tablas]
-#v(0.5em)
-#outline(title: none, target: figure.where(kind: "quarto-float-tbl"))
+// Cada índice aparece solo si el documento tiene figuras (o tablas) de ese tipo.
+#context {
+  let hay(tipo) = query(figure.where(kind: tipo)).len() > 0
+  let indice(titulo, tipo) = {
+    text(weight: "bold", size: 13pt, titulo)
+    v(0.5em)
+    outline(title: none, target: figure.where(kind: tipo))
+  }
+  if hay("quarto-float-fig") { indice([Índice de figuras], "quarto-float-fig") }
+  if hay("quarto-float-fig") and hay("quarto-float-tbl") { v(1.5em) }
+  if hay("quarto-float-tbl") { indice([Índice de tablas], "quarto-float-tbl") }
+}
 ```

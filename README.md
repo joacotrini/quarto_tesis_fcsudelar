@@ -46,9 +46,20 @@ Cada archivo `.qmd` numerado es un capítulo, listado en `_quarto.yml` bajo `boo
 - `06-referencias.qmd`: el heading y un div `::: {#refs}` vacío, donde la extensión coloca la bibliografía (ver sección siguiente). **Tiene que quedar antes de los anexos.**
 - `07-anexos.qmd`: anexos, sin numeración de página.
 
-### Cómo quitar Dedicatoria o Agradecimientos
+### Secciones opcionales y cómo quitarlas
 
-Son opcionales según la pauta. Para quitarlas, borrar el bloque correspondiente (#heading + texto) directamente en `index.qmd`.
+La pauta marca como opcionales o condicionales las partes de la tabla. Cada una se probó quitándola de la forma indicada: el PDF se genera sin errores, la numeración de página y la tabla de contenido se ajustan solas, y el resto del documento no cambia.
+
+| Parte (pauta) | Cómo quitarla |
+|---|---|
+| Dedicatoria (1.2) y Agradecimientos (1.3) | Borrar el bloque correspondiente (`# heading` + texto) en `index.qmd`. Se puede quitar una, otra o ambas. |
+| Índice de figuras y tablas (1.6, "si corresponde") | Si el trabajo no tiene figuras o no tiene tablas, el índice de ese tipo se omite solo. Si no tiene ninguna de las dos, borrar el bloque `# Índice de figuras y tablas` de `index.qmd` (si se deja, queda una página con solo el título). |
+| Metodología ("cuando corresponda") | Quitar `03-metodologia.qmd` de `book: chapters:` en `_quarto.yml`. Ojo: si allí estaba la única tabla, desaparece de la tabla de contenido y del índice de tablas, y las referencias en el texto a `@tbl-...` que queden en otros capítulos van a fallar. |
+| Contexto y demás subsecciones ("si el trabajo lo requiere", "podrán incluir") | Borrar el `## heading` y su texto. También se pueden quitar todos los subcapítulos: la tabla de contenido queda solo con los capítulos. |
+| Material complementario / anexos (2.6, "optativo") | Quitar `07-anexos.qmd` de `book: chapters:`. La numeración de página termina en las referencias, como antes. |
+| Referente Taller II (solo Licenciatura en Desarrollo) | Descomentar `referente-taller2` en `_quarto.yml` (ver arriba). Si queda comentado, la portada no lo muestra. |
+
+Al quitar figuras o tablas del texto, borrar también las referencias `@fig-...` o `@tbl-...` que las citan.
 
 ### Cómo se ubica la bibliografía respecto de los anexos
 
