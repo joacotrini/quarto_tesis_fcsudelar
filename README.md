@@ -2,6 +2,8 @@
 
 Plantilla Quarto que implementa el instructivo oficial ["Pautas de presentación de monografías de grado"](https://cienciassociales.edu.uy/estudiantes/pautas-de-presentacion-de-monografias-de-grado/) (res. de Consejo 230 del 16 de marzo de 2026) de la Facultad de Ciencias Sociales de la Universidad de la República, Uruguay. Usa un proyecto tipo `book` con salida a PDF vía [Typst](https://typst.app), a través de una extensión Quarto propia (`_extensions/fcs-udelar/`).
 
+> ATENCIÓN: El grueso del código fue generado por Claude Sonnet 5, bajo instrucción y supervisión del autor. Se revisó en su totalidad, pero si por cualquier eventualidad se encontrara un bug, favor de abrir un Issue en el repo.
+
 ## Requisitos
 
 - [Quarto](https://quarto.org) ≥ 1.4 (probado con 1.10.18). Trae Typst embebido, no hace falta instalarlo aparte.
@@ -51,10 +53,10 @@ Cada archivo `.qmd` numerado es un capítulo, listado en `_quarto.yml` bajo `boo
 La pauta marca como opcionales o condicionales las partes de la tabla. Cada una se probó quitándola de la forma indicada: el PDF se genera sin errores, la numeración de página y la tabla de contenido se ajustan solas, y el resto del documento no cambia.
 
 | Parte (pauta) | Cómo quitarla |
-|---|---|
+|------------------------------------|------------------------------------|
 | Dedicatoria (1.2) y Agradecimientos (1.3) | Borrar el bloque correspondiente (`# heading` + texto) en `index.qmd`. Se puede quitar una, otra o ambas. |
 | Índice de figuras y tablas (1.6, "si corresponde") | Si el trabajo no tiene figuras o no tiene tablas, el índice de ese tipo se omite solo. Si no tiene ninguna de las dos, borrar el bloque `# Índice de figuras y tablas` de `index.qmd` (si se deja, queda una página con solo el título). |
-| Metodología ("cuando corresponda") | Quitar `03-metodologia.qmd` de `book: chapters:` en `_quarto.yml`. Ojo: si allí estaba la única tabla, desaparece de la tabla de contenido y del índice de tablas, y las referencias en el texto a `@tbl-...` que queden en otros capítulos van a fallar. |
+| Metodología ("cuando corresponda") | Quitar `03-metodologia.qmd` de `book: chapters:` en `_quarto.yml`. |
 | Contexto y demás subsecciones ("si el trabajo lo requiere", "podrán incluir") | Borrar el `## heading` y su texto. También se pueden quitar todos los subcapítulos: la tabla de contenido queda solo con los capítulos. |
 | Material complementario / anexos (2.6, "optativo") | Quitar `07-anexos.qmd` de `book: chapters:`. La numeración de página termina en las referencias, como antes. |
 | Referente Taller II (solo Licenciatura en Desarrollo) | Descomentar `referente-taller2` en `_quarto.yml` (ver arriba). Si queda comentado, la portada no lo muestra. |
@@ -84,6 +86,7 @@ Automatizado: márgenes, tipografía y tamaños de fuente, interlineado 1.5 con 
 Responsabilidad de quien escribe (no se puede automatizar de forma confiable):
 
 - Título y encabezados en minúscula tipo oración, salvo nombres propios.
+- Datos de autoría y pertenencia institucional (ver \_quarto.yml)
 - Uso de cursiva solo para palabras que no están en español.
 - Elegir fuentes primarias para las citas cuando sea posible.
 
