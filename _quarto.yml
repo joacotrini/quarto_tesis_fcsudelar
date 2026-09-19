@@ -17,7 +17,7 @@ lang: es
 
 autor: "Nombre y Apellido"
 tutor: "Nombre y Apellido, título profesional"
-departamento: "xxx"
+departamento: "Departamento de xxx"   # nombre completo de la unidad, p. ej. "Instituto de Ciencia Política"
 licenciatura: "xxx"
 lugar: "Montevideo"
 anio: "2026"

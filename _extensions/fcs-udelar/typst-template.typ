@@ -40,8 +40,10 @@
     image("_extensions/fcs-udelar/logos/logo-fcs-udelar.png", width: 75%)
     v(2.5em)
 
+    // `departamento` lleva el nombre completo de la unidad (p. ej. "Departamento
+    // de Sociología" o "Instituto de Ciencia Política"), no solo el nombre propio.
     align(center)[
-      Departamento de #departamento, Facultad de Ciencias Sociales, Universidad de la República
+      #departamento, Facultad de Ciencias Sociales, Universidad de la República
     ]
     v(1.5em)
     align(center, text(size: 16pt)[Monografía Licenciatura en #licenciatura])

@@ -26,7 +26,7 @@ Todos los campos de la portada se completan en `_quarto.yml`:
 ``` yaml
 autor: "Nombre y Apellido"
 tutor: "Nombre y Apellido, título profesional"
-departamento: "xxx"              # el departamento correspondiente
+departamento: "Departamento de xxx"   # nombre completo de la unidad (Departamento de ..., Instituto de ...)
 licenciatura: "xxx"              # Trabajo Social | Sociología | Ciencia Política | Desarrollo
 lugar: "Montevideo"
 anio: "2026"                      # obligatorio según la pauta
