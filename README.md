@@ -43,16 +43,18 @@ Cada archivo `.qmd` numerado es un capítulo, listado en `_quarto.yml` bajo `boo
 
 - `index.qmd`: Dedicatoria, Agradecimientos, Resumen, Tabla de contenido e Índice de figuras/tablas (las páginas preliminares).
 - `01-introduccion.qmd` … `05-conclusiones.qmd`: cuerpo del trabajo.
-- `06-referencias.qmd`: llama a `#bibliography()` a mano. **No mover** **el contenido de este archivo después de los anexos** (ver sección siguiente).
+- `06-referencias.qmd`: el heading y un div `::: {#refs}` vacío, donde la extensión coloca la bibliografía (ver sección siguiente). **Tiene que quedar antes de los anexos.**
 - `07-anexos.qmd`: anexos, sin numeración de página.
 
 ### Cómo quitar Dedicatoria o Agradecimientos
 
 Son opcionales según la pauta. Para quitarlas, borrar el bloque correspondiente (#heading + texto) directamente en `index.qmd`.
 
-### Por qué la bibliografía y los anexos están "acoplados"
+### Cómo se ubica la bibliografía respecto de los anexos
 
-Typst exige que `#bibliography()` se llame una sola vez, y Quarto por defecto la inserta automáticamente *al final de todo el documento* (es decir, después de los anexos, algo que la pauta prohíbe explícitamente; cf. "antes de los anexos" en el pdf citado más arriba). Para evitarlo, la extensión suprime esa inserción automática (ver `_extensions/fcs-udelar/biblio.typ`, queda vacío a propósito) y la llamada real a `#bibliography()` está escrita a mano al final de `06-referencias.qmd`. En ese mismo lugar se apaga la numeración de página (`#fcs-numerar-paginas.update(false)`) para que los anexos queden sin numerar, tal como pide la pauta. **Si agregás contenido entre referencias y anexos, agregalo antes de esa línea de `#fcs-numerar-paginas.update(false)`, no después.**
+Typst exige que `#bibliography()` se llame una sola vez, y Quarto por defecto la inserta automáticamente *al final de todo el documento* (es decir, después de los anexos, algo que la pauta prohíbe explícitamente; cf. "antes de los anexos" en el pdf citado más arriba). Para evitarlo, la extensión suprime esa inserción automática (ver `_extensions/fcs-udelar/biblio.typ`, queda vacío a propósito) y un filtro Lua (`_extensions/fcs-udelar/bibliography.lua`) escribe la llamada real a `#bibliography()` en el lugar del div `::: {#refs}` de `06-referencias.qmd`, la misma convención que usan los libros de Quarto. En ese mismo lugar el filtro apaga la numeración de página (`#fcs-numerar-paginas.update(false)`) para que los anexos queden sin numerar, tal como pide la pauta. **Si agregás contenido entre referencias y anexos, agregalo antes del div `#refs`, no después.**
+
+Si el div `#refs` falta, el filtro avisa con un warning y agrega la bibliografía al final del documento (después de los anexos y con los anexos numerados).
 
 ## Figuras, tablas y citas
 

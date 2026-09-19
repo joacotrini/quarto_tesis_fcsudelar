@@ -6,6 +6,9 @@ contributes:
   formats:
     typst:
       knitr: false
+      filters:
+        - path: bibliography.lua
+          at: pre-quarto
       template-partials:
         - typst-template.typ
         - typst-show.typ
